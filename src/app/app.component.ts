@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 
+import * as $ from 'jquery';
 @Component({
-  selector: 'my-app',
+  selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+  styleUrls: ['./app.component.less']
 })
-export class AppComponent  {
-  name = 'Angular';
+export class AppComponent {
+  title = 'ng-learn';
+
+  toggleMenu() {
+    $("#wrapper").toggleClass("toggled");
+  }
 }

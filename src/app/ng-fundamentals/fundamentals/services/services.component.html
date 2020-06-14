@@ -1,0 +1,39 @@
+<h5 class="text-center">Angular Services</h5>
+
+<div class="row">
+    <div class="col-12">
+        <dt>Generating services using angular CLI:</dt>
+        <ul>
+            <li>Generate service - <code class="font-weight-bold">ng <u title="g for generate">g</u> <u class="ml-2" title="s for service">s</u>
+                    course</code></li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <dt>Dependency Injection:</dt>
+        <ul>
+            <pre class="font-weight-bold">
+                {{injectService}}  
+            </pre>
+        </ul>
+        <dt>Alternative Dependency Injection:</dt>
+        <ul>
+            <pre class="font-weight-bold">
+                {{alternativeWay}}
+            </pre>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <dt>Output:</dt>
+        <ul>
+            <ol>
+                <li *ngFor="let course of courses">{{course}}</li>
+            </ol>
+        </ul>
+    </div>
+</div>

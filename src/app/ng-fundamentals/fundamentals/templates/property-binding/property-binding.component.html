@@ -1,0 +1,48 @@
+<h5 class="text-center">Property Binding</h5>
+<hr />
+<div class="row">
+    <div class="col-12">
+        <ul>
+            <dt>Syntax:</dt>
+            <ul>
+                <li>
+                    <code class="font-weight-bold">{{syntaxOne}}</code>
+                </li>
+                <li>
+                    <code class="font-weight-bold">{{alternativeSyntaxOne}}</code>
+                </li>
+                <li>
+                    <code class="font-weight-bold">{{syntaxTwo}}</code>
+                </li>
+                <li>
+                    <code class="font-weight-bold">{{alternativeSyntaxTwo}}</code>
+                </li>
+            </ul>
+            <dt>Note:</dt>
+            <ul>
+
+                <li>
+                    <p>Wherever you want to render text, that's where you use
+                        <u class="font-weight-bold">string interpolation</u>
+                    </p>
+                </li>
+
+            </ul>
+            <dt>Example:</dt>
+            <div class="row ml-3">
+                <div class="col-12">
+                    <h5>{{title}}</h5>
+                </div>
+                <div class="col-12">
+                    <h5 [textContent]="title"></h5>
+                </div>
+                <div class="col-12">
+                    <img src="{{imageUrl}}" alt="...">
+                </div>
+                <div class="col-12">
+                    <img [src]="imageUrl" alt="...">
+                </div>
+            </div>
+        </ul>
+    </div>
+</div>
