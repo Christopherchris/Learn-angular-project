@@ -1,1 +1,22 @@
-<p>pipes works!</p>
+<h5 class="text-center">Pipes</h5>
+<hr />
+<div class="row">
+    <div class="col-12">
+        <ul>
+            <dt>Syntax:</dt>
+            <ul>
+                <pre class="font-weight-bold">{{syntax}}</pre>
+            </ul>
+            <dt>Example:</dt>
+            <ul>
+                <div class="col-3">
+                    <li>{{course.title | uppercase | lowercase}} </li>
+                    <li>{{course.students | number}}</li>
+                    <li>{{course.rating | number : '2.1-1'}}</li>
+                    <li>{{course.price | currency :'INR':true:'3.2-2'}}</li>
+                    <li>{{course.releaseDate | date:'shortDate'}}</li>
+                </div>
+            </ul>
+        </ul>
+    </div>
+</div>

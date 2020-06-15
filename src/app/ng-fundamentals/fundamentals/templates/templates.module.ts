@@ -1,5 +1,7 @@
+import { SummaryPipe } from './summary.pipes';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms'
 
 import { TemplatesRoutingModule } from './templates-routing.module';
 import { TemplatesComponent } from './templates.component';
@@ -17,10 +19,25 @@ import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
 
 
 @NgModule({
-  declarations: [TemplatesComponent, PropertyBindingComponent, TemplateComponent, AttributeBindingComponent, ClassBindingComponent, StyleBindingComponent, EventBindingComponent, TwoWayBindingComponent, EventFilteringComponent, TemplateVariablesComponent, PipesComponent, CustomPipesComponent],
+  declarations: [
+    TemplatesComponent,
+    PropertyBindingComponent,
+    TemplateComponent,
+    AttributeBindingComponent,
+    ClassBindingComponent,
+    StyleBindingComponent,
+    EventBindingComponent,
+    TwoWayBindingComponent,
+    EventFilteringComponent,
+    TemplateVariablesComponent,
+    PipesComponent,
+    CustomPipesComponent,
+    SummaryPipe
+  ],
   imports: [
     CommonModule,
-    TemplatesRoutingModule
+    TemplatesRoutingModule,
+    FormsModule
   ]
 })
 export class TemplatesModule { }

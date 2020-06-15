@@ -11,7 +11,9 @@
             </ul>
             <dt>Example:</dt>
             <ul>
-                <button type="button" class="btn btn-primary" (click)="onSave()">Save</button>
+                <div (click)="onDivClicked()">
+                    <button type="button" class="btn btn-primary" (click)="onSave($event)">Save</button>
+                </div>
             </ul>
         </ul>
     </div>

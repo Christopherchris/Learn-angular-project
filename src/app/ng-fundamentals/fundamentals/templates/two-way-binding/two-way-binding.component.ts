@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./two-way-binding.component.less']
 })
 export class TwoWayBindingComponent implements OnInit {
-
+  email='me@example.com'
+  syntax = '<input type="text" [(ngModel)]="email" (keyup.enter)="onKeyUp()">';
   constructor() { }
 
   ngOnInit(): void {
+  }
+  
+  onKeyUp() {
+    console.log(this.email);
   }
 
 }

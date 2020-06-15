@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./event-filtering.component.less']
 })
 export class EventFilteringComponent implements OnInit {
-
+  syntax = '<input type="text" (keyup.enter)="onKeyUp()">';
   constructor() { }
 
   ngOnInit(): void {
+  }
+  onKeyUp() {
+    console.log('ENTER was pressed');
   }
 
 }

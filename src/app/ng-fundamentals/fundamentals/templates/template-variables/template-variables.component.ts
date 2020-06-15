@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateVariablesComponent implements OnInit {
 
+  syntax = '<input #email type="text" (keyup.enter)="onKeyUp(email.value)">';
   constructor() { }
 
   ngOnInit(): void {
+  }
+  onKeyUp(email) {
+    console.log(email);
   }
 
 }

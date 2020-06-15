@@ -1,1 +1,20 @@
-<p>two-way-binding works!</p>
+<h5 class="text-center">Two way binding</h5>
+<hr />
+<div class="row">
+    <div class="col-12">
+        <ul>
+            <dt>Syntax:</dt>
+            <ul>
+                <li>
+                    <code class="font-weight-bold">{{syntax}}</code>
+                </li>
+            </ul>
+            <dt>Example:</dt>
+            <ul>
+                <div class="col-3">
+                    <input type="text" [(ngModel)]="email" (keyup.enter)="onKeyUp()">
+                </div>
+            </ul>
+        </ul>
+    </div>
+</div>
